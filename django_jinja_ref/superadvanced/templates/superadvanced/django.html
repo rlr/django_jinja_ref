@@ -1,0 +1,14 @@
+{% extends 'superadvanced/base.html' %}
+{% load i18n %}
+
+{% block content %}
+	<p>
+		{% trans "(Django) This is a translatable string." %}
+	</p>
+
+	<p>
+		{% blocktrans with var='test' %}
+			(Django) Another translatable string: {{var}}
+		{% endblocktrans %}
+	</p>
+{% endblock %}

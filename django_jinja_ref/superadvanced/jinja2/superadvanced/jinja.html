@@ -1,0 +1,21 @@
+{% extends 'superadvanced/base.html' %}
+{% from 'superadvanced/macros/macros.html' import supermacro %}
+
+{% block content %}
+    <p>
+        {{ superfunction() }}
+    </p>
+    <p>
+        {{ _('(Jinja) This is a translatable string.') }}
+    </p>
+
+    <p>
+        {% trans var='test' %}
+            (Jinja) Another translatable string: {{var}}
+        {% endtrans %}
+    </p>
+
+    {% include 'superadvanced/includes/include.html' %}
+
+    {{ supermacro() }}
+{% endblock %}

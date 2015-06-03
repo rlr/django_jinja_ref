@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <a href="{{ url('django') }}">Go to Django template/view</a>
+</body>
+</html>

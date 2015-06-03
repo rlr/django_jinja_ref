@@ -1,0 +1,5 @@
+Django==1.8.2
+
+django-jinja==1.4.1
+
+Jinja2==2.7.3
